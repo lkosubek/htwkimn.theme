@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+        xmlns="http://namespaces.plone.org/diazo"
+        xmlns:css="http://namespaces.plone.org/diazo/css"
+        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+        xmlns:xi="http://www.w3.org/2001/XInclude">
+
+        <!-- theme wrapper, to prevent theming ZMI -->
+        <rules css:if-content="#visual-portal-wrapper">
+
+            <!-- Customize/Overwrite content and parent theme rules
+                 @see http://docs.diazo.org/en/latest/advanced.html -->
+
+            <!-- Use index.html of parent theme as base theme -->
+            <theme href="/++theme++plonetheme.onegov/index.html" />
+
+            <!-- Clean useless content -->
+            <drop css:content="ul#portal-personaltools" />
+            <drop css:content="#portal-globalnav #portaltab-index_html" />
+            <drop css:content="#portal-siteactions" />
+
+            <!-- Replace favicon -->
+            <replace content="/html/head/link[contains(@rel, 'icon')]">
+                 <link href="/++theme++htwkimn.theme/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+            </replace>
+
+            <!-- Replace logo -->
+            <replace css:content="a#portal-logo"> 
+                <a id="portal-logo" title="Website" accesskey="1" href="http://www.htwk-leipzig.de">
+                    <img alt="Website Logo" src="/++theme++htwkimn.theme/images/logo.png" />
+                </a>
+            </replace>
+
+            <!-- Change size of logo  -->
+            <before css:theme-children="div.logoRow div.cell:first-child"> 
+                <xsl:attribute name="class">cell position-0 width-4</xsl:attribute>
+            </before>
+            <before css:theme-children="div.logoRow div.cell:last-child"> 
+                <xsl:attribute name="class">cell position-4 width-12</xsl:attribute>
+            </before>
+
+            <!-- Add home button for mobile phones -->
+            <replace css:content="ul.mobileButtons #toggle_slidenavi">
+                <xsl:copy-of select="."/>
+                <li>
+                    <a class="contenttype-subsite" title="Home" href="{$base}">
+                        <span class="hiddenStructure">Home</span>
+                    </a>
+                </li>
+            </replace>
+
+            <!-- Add claim in header -->
+            <after css:theme-children="div.logoRow div.cell:last-child">
+                <span id="portal-title" class="clearfix">
+                    Fakultät Informatik, Mathematik und Naturwissenschaften
+                </span>
+            </after>
+
+            <!-- Add search button, which replaces search box in to narrow screens.
+                 Used as workaround because screen width, when mobile navigation
+                 should be activated can't be choosen easily -->
+            <after css:theme="#header #portal-searchbox">
+                <xsl:element name="a">
+                    <xsl:attribute name="id">portal-searchbutton</xsl:attribute>
+                    <xsl:attribute name="title">Search</xsl:attribute>
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="/html/head/link[contains(@rel, 'search')]/@href" />
+                    </xsl:attribute>
+                        <span class="hiddenStructure">Search</span>
+                 </xsl:element>        
+            </after>
+
+            <!-- Fix FacultyStaffDirectory cells -->
+            <replace css:content-children="#hcard .row">
+                <div class="cell position-0 width-11">
+                    <xsl:copy-of select="./*[ not( contains( @class, 'headshot' ) ) ]" />
+                </div>
+                <div class="cell position-11 width-1"></div>
+                <div class="cell position-12 width-4">
+                    <xsl:copy-of select="./div[ contains( @class, 'headshot' ) ]/*" />
+                </div>
+            </replace>
+        </rules>
+
+        <!-- Include rules of parent theme -->
+        <xi:include href="/++theme++plonetheme.onegov/rules.xml" />
+</rules>
+
+

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<object>
+ <resourcetypes>
+  <linkable>
+   <element value="ContentPage"/>
+   <element value="News"/>
+   <element value="NewsFolder"/>
+  </linkable>
+ </resourcetypes>
+</object>

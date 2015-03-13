@@ -1,0 +1,37 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:theme="http://namespaces.zope.org/plonetheme.onegov"
+    i18n_domain="htwkimn.theme">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="htwkimn.theme"
+      directory="profiles/default"
+      description="Installs the htwkimn.theme package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <!-- -*- extra stuff goes here -*- -->
+    <plone:static directory="resources" type="theme" />
+
+    <!-- Overwriting of variables and mixins need to be
+         "prepended" to the onegov configuration, otherwise
+         they have no effect -->
+	<theme:add_scss path="resources/sass/overwrite_sass-rules.scss" />
+
+	<includeDependencies package="." />
+
+    <!-- Own additional generated rules -->
+	<theme:add_scss path="resources/sass/custom.scss" />
+
+    <!-- Use of Mixins and Variables, as well as Style Overwrites
+         need to be appended, like in the css cascade, otherwise 
+         Mixins are not declared and Styles need "!important" -->
+	<theme:add_scss path="resources/sass/overwrite_css-rules.scss" />
+
+    <!-- Own responsive rules -->
+	<theme:add_scss path="resources/sass/responsive.scss" />
+</configure>

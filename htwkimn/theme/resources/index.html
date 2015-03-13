@@ -1,0 +1,7 @@
+Dont' use that Markup file as your HTML base!!
+
+We want to benefit from future updates of the parent theme. That means, that our adaptations need to live in seperate files, so that they could easily be pluged in into the parent theme and don't get overwritten by future updates.
+
+Following that thoughts, We want to use the index.html and rules.xml of our parent theme "plonetheme.onegov". CSS adaptations will be done in a custom file, which overrides the parent styles. Furthermore changes in the theme markup will be done by xslt rules in our rules.xml. 
+
+To achive that, please copy the needed "theme"-rules of your parent theme to your rules.xml but point them to the original index.html of your parent theme, not this one! After that rule include the original ruleset of your parent theme in your rules.xml. (see rules.xml for an example). 

@@ -1,0 +1,162 @@
+/* Style overwrites */
+
+@media screen and (max-width: #{em(1170px, 16px)} ) {
+    body {
+        font-size: 13px;
+        line-height: 1.5em;
+    }
+    #portal-title {
+        margin-top: em(36px, 24px);
+    }
+}
+
+@media screen and (max-width: #{em(1110px, 16px)} ) {
+    #portal-globalnav > li > .wrapper a {
+        font-size: 1.05em; 
+    }
+    #portal-searchbox #searchGadget {
+        font-size: 0.95em;
+    }
+}
+
+@media screen and (max-width: #{em(980px, 16px)} ) {
+    .fixedWidth {
+      width: 100%;
+    }
+    #portal-topactions {
+        min-height: 0em ;
+    }
+}
+
+@media screen and (max-width: #{em(960px, 16px)} ) {
+    #portal-searchbox {
+        display: none;
+    }
+    #portal-searchbutton {
+        display: block;
+    }
+    #header {
+        .cell.position-0.width-12 {
+            @include width15();
+        }
+        .cell.position-12.width-4 {
+            @include position15();
+            @include width1();
+        }
+    }
+    #portal-globalnav > li > .wrapper a {
+        font-size: 1.15em; 
+    }
+    #portal-title {
+        font-size: em(22px, 13px); 
+        margin-top: em(36px, 22px);
+    }
+}
+
+@media screen and (max-width: #{em($screen-tablet, 16px)} ) {
+    #portal-searchbutton {
+        display: none;
+    }
+    .LSBox:before {
+        top: em(23px);
+    }
+    #header {
+       .cell.position-12.width-4 {
+           @include position0();
+           @include width16();
+       }
+    }
+    #portal-title {
+        font-size: em(18px, 13px); 
+        margin-top: em(52px, 18px);
+    }
+    .headerDelimiterWrapper {
+        margin-top: 0;
+        #header-delimiter { 
+            margin-left: -100%;
+            width: 100%;
+        }
+    }
+    #content ul.slick-dots {
+        width: 20%;
+        left: 45%;
+    }
+    #slider-wrapper .sliderText {
+        height: em(60px,13px) !important;
+    }
+    #portal-logo {
+        margin: 0.3em 0 3.22em;
+    }
+}
+
+@media screen and (max-width: #{em(695px, 16px)} ) {
+    #portal-title {
+        font-size: em(17px, 13px); 
+        margin-top: em(52px, 17px);
+        margin-bottom: 1em;
+    }
+    .simplelayout-content .onecolumn .sl-img-middle,
+    .simplelayout-content .onecolumn .sl-img-middle-right {
+       .sl-img-wrapper {
+            width: 66% !important;
+       }
+    }
+}
+
+@media screen and (max-width: #{em($screen-mobile-landscape, 16px)} ) {
+    body {
+        font-size: 14px;
+    }
+    #portal-title {
+        font-size: em(15px, 13px); 
+        margin-top: 3.5em;
+    }
+    #column-content .quick-start-nav-column {
+        margin-left: -100%;
+        width: 100%;
+        float: none;
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+@media screen and (max-width: #{em(420px, 16px)} ) {
+    .simplelayout-content .twocolumn {
+        &.left, &.right {
+            float: none !important;
+            margin: 0 !important;
+            width: auto !important;
+        }
+    }
+    .simplelayout-content .sl-img-small,
+    .simplelayout-content .sl-img-small-right,
+    .simplelayout-content .sl-img-middle,
+    .simplelayout-content .sl-img-middle-right {
+       .sl-img-wrapper {
+            width: 50% !important;
+       }
+    }
+}
+
+@media screen and (max-width: #{em($screen-mobile, 16px)} ) {
+    .simplelayout-content .onecolumn .sl-img-middle,
+    .simplelayout-content .onecolumn .sl-img-middle-right,
+    .simplelayout-content .sl-img-small,
+    .simplelayout-content .sl-img-small-right,
+    .simplelayout-content .sl-img-middle,
+    .simplelayout-content .sl-img-middle-right {
+       .sl-img-wrapper {
+            float: none !important;
+            width: 100% !important;
+            margin-left: 0 !important;
+            maring-right: 0 !important
+            img {
+                width: 100% !important;
+            }
+        }
+    }
+}

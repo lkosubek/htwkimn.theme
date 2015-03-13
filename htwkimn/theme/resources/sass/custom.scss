@@ -1,0 +1,106 @@
+/*--- 
+### Additional added SASS ###
+
+added vars, e.g. to simplify style overwrites 
+---*/
+
+// @see https://css-tricks.com/snippets/sass/px-to-em-functions/
+@function em($pixels, $context: 14px) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels / $context * 1em;
+}
+
+
+/*--- 
+### Additional added CSS ###
+
+added rules, e.g. to style page content 
+---*/
+
+/* Special classes not strictly conform to the grid, but are useful for certain layouts.
+   @see http://limi.net/deco.gs/deco.css 
+ */
+div.width-1_3 { width: 31.25%; }
+div.width-2_3 { width: 64.5%; } 
+div.position-1_3 {margin-left: -66.7%;} 
+div.position-2_3 {margin-left: -33.4%;} 
+
+/* Full/leftmost are useful synonyms for full width and leftmost positioning */
+div.position-leftmost  { margin-left: -100%   }
+div.width-full { width: 98% }
+
+
+/* Frontpage Quicknavi */
+$quickStartNavColumnMargin = 20px/869px * 100%;
+$quickStartNavColumnWidth = ( 100% - $quickStartNavColumnMargin * 2 ) / 3;
+$quickStartNavColumnTotalWidth = $quickStartNavColumnWidth + $quickStartNavColumnMargin;
+
+.quick-start-nav {
+    text-align: center;
+}
+.quick-start-nav.row {
+    margin-bottom: 0.5em;
+}
+.quick-start-nav-column.width-1_3 {
+    width: $quickStartNavColumnWidth;
+}
+.quick-start-nav-column.position-1_3 {
+    margin-left: -100% + $quickStartNavColumnTotalWidth; 
+}
+.quick-start-nav-column.position-2_3 {
+    margin-left: -100% + $quickStartNavColumnTotalWidth * 2;
+}
+.icon, .icon-label {
+    display:block;
+    max-width: 100%;
+}
+.icon {
+    background-color: $htwk-imn-dark; 
+    position: relative;
+//    line-height: 0 !important;
+}
+.icon-label {
+    padding: 0.33em 0;
+    color: #fff;
+    background-color: $htwk-imn-dark;
+    opacity: 0.92;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+a:hover .icon-label {
+    opacity: 1;
+}
+ul.quick-start-nav {
+    margin-left: 0;
+    padding: 0;
+    list-style: none;
+    background: #F0F0F0;
+    li {
+        border-top: 1px solid $htwk-gray2;
+        padding: 0.5em 0 0.4em 0;
+        margin: 0;
+        &:hover {
+            background: $htwk-imn-dark;
+        }
+        &:hover a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+.section-start-1 h1.documentFirstHeading {
+    display: none;
+}
+
+
+
