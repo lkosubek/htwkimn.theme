@@ -57,12 +57,12 @@ Additional SCSS
 
 Utilizes following add-ons for comfort of content editors
 ---------------------------------------------------------
-ftw.contentpage
-ftw.contenttemplates
-ftw.contentmenu
-ftw.footer
-ftw.upgrade
-
+- ftw.contentpage
+- ftw.contenttemplates
+- ftw.contentmenu
+- ftw.footer
+- ftw.upgrade
+- ftw.mobilenavigation
 
 Examples
 --------

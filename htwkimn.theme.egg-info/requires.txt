@@ -1,3 +1,10 @@
 setuptools
 Plone
-plonetheme.onegov
+plonetheme.onegov==1.5
+ftw.footer
+ftw.contentpage==1.9
+ftw.contenttemplates
+ftw.contentmenu
+six==1.4.1
+simplelayout.base==4.0.4
+ftw.upgrade==1.12

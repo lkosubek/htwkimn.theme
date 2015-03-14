@@ -7,5 +7,6 @@
 		<dependency>profile-ftw.contentpage:default</dependency>
 		<dependency>profile-ftw.contenttemplates:default</dependency>
 		<dependency>profile-ftw.contentmenu:default</dependency>
+		<dependency>profile-ftw.mobilenavigation:default</dependency>
 	</dependencies>
 </metadata>
