@@ -3,6 +3,7 @@
   <version>1</version>
 	<dependencies>
 		<dependency>profile-plonetheme.onegov:default</dependency>
+		<dependency>profile-ftw.upgrade:default</dependency>
 		<dependency>profile-ftw.footer:default</dependency>
 		<dependency>profile-ftw.contentpage:default</dependency>
 		<dependency>profile-ftw.contenttemplates:default</dependency>
