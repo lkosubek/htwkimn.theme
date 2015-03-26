@@ -6,7 +6,7 @@
     xmlns:theme="http://namespaces.zope.org/plonetheme.onegov"
     i18n_domain="htwkimn.theme">
 
-  <genericsetup:registerProfile
+    <genericsetup:registerProfile
       name="default"
       title="htwkimn.theme"
       directory="profiles/default"
@@ -14,7 +14,7 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
-  <!-- -*- extra stuff goes here -*- -->
+    <!-- -*- extra stuff goes here -*- -->
     <plone:static directory="resources" type="theme" />
 
     <!-- Overwriting of variables and mixins need to be
@@ -22,7 +22,7 @@
          they have no effect -->
 	<theme:add_scss path="resources/sass/overwrite_sass-rules.scss" />
 
-	<includeDependencies package="." />
+	<includeDependencies package="plonetheme.onegov" />
 
     <!-- Own additional generated rules -->
 	<theme:add_scss path="resources/sass/custom.scss" />

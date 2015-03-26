@@ -64,6 +64,7 @@ Utilizes following add-ons for comfort of content editors
 - ftw.upgrade
 - ftw.mobilenavigation
 
+
 Examples
 --------
 

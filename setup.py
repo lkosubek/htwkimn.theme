@@ -26,7 +26,7 @@ setup(name='htwkimn.theme',
       install_requires=[
         'setuptools',
         # -*- Extra requirements: -*-
-        'Plone',
+        'Plone>=4.3.3',
         'plonetheme.onegov==1.5',
         'ftw.footer',
         'ftw.mobilenavigation',
