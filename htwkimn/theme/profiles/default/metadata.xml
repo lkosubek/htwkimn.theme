@@ -2,7 +2,7 @@
 <metadata>
   <version>1000</version>
 	<dependencies>
-		<dependency>plone.app.theming:default</dependency>
+		<dependency>profile-plone.app.theming:default</dependency>
 		<dependency>profile-plonetheme.onegov:default</dependency>
 		<dependency>profile-ftw.upgrade:default</dependency>
 		<dependency>profile-ftw.footer:default</dependency>

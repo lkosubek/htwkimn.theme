@@ -22,7 +22,7 @@
          they have no effect -->
 	<theme:add_scss path="resources/sass/overwrite_sass-rules.scss" />
 
-	<includeDependencies package="plonetheme.onegov" />
+	<includeDependencies package="." />
 
     <!-- Own additional generated rules -->
 	<theme:add_scss path="resources/sass/custom.scss" />
