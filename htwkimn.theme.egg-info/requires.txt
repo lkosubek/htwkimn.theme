@@ -1,7 +1,8 @@
 setuptools
-Plone
+Plone>=4.3.3
 plonetheme.onegov==1.5
 ftw.footer
+ftw.mobilenavigation
 ftw.contentpage==1.9
 ftw.contenttemplates
 ftw.contentmenu

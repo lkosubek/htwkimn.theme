@@ -1,5 +1,4 @@
 /* Style overwrites */
-
 @media screen and (max-width: #{em(1170px, 16px)} ) {
     body {
         font-size: 13px;
@@ -9,7 +8,6 @@
         margin-top: em(36px, 24px);
     }
 }
-
 @media screen and (max-width: #{em(1110px, 16px)} ) {
     #portal-globalnav > li > .wrapper a {
         font-size: 1.05em; 

@@ -1,0 +1,100 @@
+/*--- 
+### HTWK CD ###
+
+These rules are taken from the htwk Website and just 
+transscripted, but not modified. Modification will be 
+done directly while overwriting the OneGov variables
+with custom values.
+
+@see http://www.htwk-leipzig.de/de/hki/hochschulmarketing/cd/styleguide-internet/
+---*/
+
+/* General rules */
+$htwk-primary: #004488;
+$htwk-primary-bright: #0077BB;
+$htwk-primary-dark: #00336F;
+$htwk-secondary: #22BBFF; // e.g. subheadlines, two-colored logo
+
+/* General website rules */
+$htwk-portal-blue: #2347A0; // e.g. website header/footer
+$htwk-portal-bgcolor1: #fbfbfb;
+$htwk-portal-bgcolor2: #e8e8e8;
+
+/* Website colors rules */
+$htwk-gray1: #f0f0f0; // e.g. global navi bg
+$htwk-gray2: #A2A9A4; // e.g. global navi active, side menu header
+$htwk-gray3: #666666; // e.g. normal text
+$htwk-gray4: #333333; // e.g. headlines
+$htwk-gray-secondary1: #ECEEED; // e.g. navi bg
+$htwk-gray-secondary2: #CBD1CD; // e.g. navi mouseover bg
+$htwk-gray-secondary3: #C2C2C2; // e.g. menu header bg
+$htwk-textcolor: $htwk-gray3;
+
+/* Special FIMN Colors rules */
+$htwk-imn-bright: #C3C8C8; // e.g. global navi bg
+$htwk-imn-dark: #8E9797; // e.g. global navi active, side menu header
+
+
+
+/*--- 
+### OneGov Variables ###
+
+These variables are copied from OneGov to overwrite them with 
+custom values and generate an own website design. In the first step
+the values were taken from the official HTKW CD. Values that didn't 
+fit together in a harmonic way, were than changed to custom ones.
+---*/
+
+/* @see onegov/resources/sass/variables.scss */
+$body-line-height: 1.428571429em;
+$body-background: $htwk-portal-bgcolor2;
+
+$lightgray: $htwk-gray1;
+$lightgray2: $htwk-gray2; // $htwk-imn-bright;
+$lightgray3: $htwk-gray3; //$htwk-imn-dark;
+$darkgray: $htwk-gray4;
+
+$text-color: $htwk-textcolor;
+
+$logo-height: 68px;
+
+$font-size: 14px;
+
+$heading-font-size: $font-size * 2;
+
+$page-background: #ffffff;
+$page-bordercolor: $htwk-gray2;
+
+$link-color: $htwk-portal-blue;
+$link-textdecoration: none;
+$link-color-hover: $htwk-gray3; // 
+$link-textdecoration-hover: underline;
+
+$highlight-color-light: $htwk-gray2;
+
+$input-bordercolor: $htwk-gray2;
+$input-background-color: #F9F9F9;
+
+$global-navigation-fontsize: 1.214285714em;
+$global-navigation-color: $htwk-portal-blue;;
+$global-navigation-color-hover: $htwk-imn-dark;;
+$global-navigation-color-selected:  $htwk-imn-dark;
+$global-navigation-flyout-border: $htwk-portal-blue;
+$global-navigation-border-color-active: $htwk-imn-dark;
+$global-navigation-border-color: $htwk-imn-dark;
+
+$navigation-gradient-from: $htwk-gray-secondary2;
+$navigation-gradient-to: $htwk-gray-secondary2;
+$navigation-sibling-background: $htwk-gray-secondary1; 
+
+$mobile-navigation-bordercolor: $htwk-portal-blue;;
+
+$footer-color: #F8F8F2;
+$footer-background: #72726A;
+$footer-border-color: #808075;
+
+$screen-tablet: 769px;  // needs to stay 769px otherwise mobile nav is broken
+$screen-tablet-landscape: $screen-tablet; // collapse sidebar later, which also fixes width of news portlet when collapsing and no left sidebar is active
+
+$focus_outline_color: $htwk-portal-blue;
+

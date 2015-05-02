@@ -20,17 +20,17 @@
     <!-- Overwriting of variables and mixins need to be
          "prepended" to the onegov configuration, otherwise
          they have no effect -->
-	<theme:add_scss path="resources/sass/overwrite_sass-rules.scss" />
+	<theme:add_scss path="resources/sass/overwrite_parent-sass-rules.scss" />
 
     <include package="plonetheme.onegov" />
 
     <!-- Own additional generated rules -->
-	<theme:add_scss path="resources/sass/custom.scss" />
+	<theme:add_scss path="resources/sass/custom_theme-rules.scss" />
 
     <!-- Use of Mixins and Variables, as well as Style Overwrites
          need to be appended, like in the css cascade, otherwise 
          Mixins are not declared and Styles need "!important" -->
-	<theme:add_scss path="resources/sass/overwrite_css-rules.scss" />
+	<theme:add_scss path="resources/sass/overwrite_parent-css-rules.scss" />
 
     <!-- Own responsive rules -->
 	<theme:add_scss path="resources/sass/responsive.scss" />

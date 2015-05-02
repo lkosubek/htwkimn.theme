@@ -5,13 +5,13 @@
         xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
         xmlns:xi="http://www.w3.org/2001/XInclude">
 
-        <!-- theme wrapper, to prevent theming ZMI -->
+        <!-- Apply rules only if portal is shown, to prevent theming ZMI -->
         <rules css:if-content="#visual-portal-wrapper">
 
             <!-- Customize/Overwrite content and parent theme rules
                  @see http://docs.diazo.org/en/latest/advanced.html -->
 
-            <!-- Use index.html of parent theme as base theme -->
+            <!-- Use index.html of parent theme as HTML base -->
             <theme href="/++theme++plonetheme.onegov/index.html" />
 
             <!-- Clean useless content -->
@@ -31,14 +31,6 @@
                 </a>
             </replace>
 
-            <!-- Change size of logo  -->
-            <before css:theme-children="div.logoRow div.cell:first-child"> 
-                <xsl:attribute name="class">cell position-0 width-4</xsl:attribute>
-            </before>
-            <before css:theme-children="div.logoRow div.cell:last-child"> 
-                <xsl:attribute name="class">cell position-4 width-12</xsl:attribute>
-            </before>
-
             <!-- Add home button for mobile phones -->
             <replace css:content="ul.mobileButtons #toggle_slidenavi">
                 <xsl:copy-of select="."/>
@@ -48,6 +40,14 @@
                     </a>
                 </li>
             </replace>
+
+            <!-- Change layout of claim cell  -->
+            <before css:theme-children="div.logoRow div.cell:first-child"> 
+                <xsl:attribute name="class">cell position-0 width-4</xsl:attribute>
+            </before>
+            <before css:theme-children="div.logoRow div.cell:last-child"> 
+                <xsl:attribute name="class">cell position-4 width-12</xsl:attribute>
+            </before>
 
             <!-- Add claim in header -->
             <after css:theme-children="div.logoRow div.cell:last-child">

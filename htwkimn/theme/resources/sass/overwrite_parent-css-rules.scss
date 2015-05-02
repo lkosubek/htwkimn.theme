@@ -1,0 +1,194 @@
+/* Page style */
+
+html {
+    min-height: 100vh;
+}
+body {
+   @include gradient( $htwk-portal-bgcolor1, $htwk-portal-bgcolor2 ) ; 
+}
+
+
+/* Page components descendending */
+
+#portal-topactions {
+    min-height: 0.5em ;
+}
+.logoRow {
+    background: #ffffff url("/++theme++htwkimn.theme/images/header-bg_strong-lines_higher.png") no-repeat 0 0 {
+        position: right bottom;
+    }
+    border-bottom: em(3px) solid $htwk-imn-bright;
+}
+#portal-personaltools-wrapper {
+    margin-top: 0.3em;
+}
+#user-name, #personaltools-portrait {
+    line-height: em(21px);
+    max-height: em(21px);
+    color: $htwk-gray4;
+}
+#portal-personaltools dt {
+    border-color: #fff;
+}
+#portal-logo {
+    margin: 1.5em 0 em(31px);
+}
+#portal-title {
+    color: #fff;
+    display: block;
+    font: {
+        size: em(26px);
+        weight: bold;
+    }
+    line-height: em(32px, 26px);
+    margin: em(36px, 26px) 0 0;
+    text-align: right;
+}
+.LSBox:before {
+    top: em(8px);
+}
+#portal-searchbox {
+    margin-top: em(5px);
+    #searchGadget {
+        @include boxshadow(0 0 0.5em #FCFCFC inset);
+        padding-top: em(6px);
+        padding-bottom: em(4px);
+        height: 1em;
+    }
+}
+#portal-searchbutton {
+    display: none;
+    @include icon($char: "\e806");
+    background: none repeat scroll 0 0 $htwk-portal-blue;
+    color: #fff;
+    float: right;
+    margin: 0.25em;
+    opacity: 0.95;
+    padding: 0.25em 0.8em;
+    &:hover {
+        text-decoration: none;
+        background-color: $htwk-gray3;
+        opacity: 1;
+    }
+}
+#portal-globalnav {
+    padding-top: em(8px);
+    li {
+        margin-bottom: em(7px);
+        .wrapper {
+            // important for flyout navi
+            padding: em(8px) 1em 0.5em;
+        }
+    }
+    li.selected {
+        border-bottom: em(5px) solid $global-navigation-border-color-active;
+        padding-bottom: 0.5em;
+    }
+    ul.flyoutChildren {
+        top: 1.8em;
+        padding-top: 0;
+    }
+    > li.flyoutActive > .wrapper a {
+        color: $htwk-imn-dark;
+    }
+}
+.mobileButtons a {
+    color: #fff;
+    border-color: #fff;
+    &:hover {
+        background-color: $htwk-imn-dark;
+        color: #fff;
+    }
+}
+#header-delimiter {
+    line-height: 0;
+    border-width: em(5px);
+}
+#breadcrumbs-wrapper {
+    margin-top: em(13px);
+}
+#portal-breadcrumbs .flyoutBreadcrumbs .crumb {
+    > ul li a, a.crumbLink {
+        font-size: em(13px);
+    }
+    a.loadChildren {
+        background: none;
+    }
+}
+#slider-wrapper .sliderText {
+    height: em(86px) !important;
+    color: #fff !important;
+    opacity: 0.94;
+}
+.slick-slider {
+    margin-bottom: em(20px);
+}
+#column-navigation .portletContextNavigation {
+    border-width: 1px 1px;
+    border-color: $htwk-imn-bright;
+    ul li a {
+        color: $htwk-gray4;
+    }
+    .child.state-published:hover {
+       @include gradient( $htwk-gray-secondary2, $htwk-gray-secondary2);
+    }
+}
+.portletHeader  a {
+    color: $htwk-gray3;
+}
+#footer {
+    background: $htwk-imn-dark;
+    color: $htwk-gray1;
+    .portletHeader {
+        font-weight: bold;
+    }
+    .portlet, #footer-column-3, #footer-column-4 {
+        border-color: $htwk-imn-bright;
+    }
+    iframe {
+        border: em(1px) solid $htwk-gray3;
+    }
+}
+
+
+/* Simple-Layout */
+
+#content .simplelayout-content.two-columns-design .twocolumn.left {
+    margin-right: 2%;
+}
+
+
+/* Content */
+
+h2 {
+    font-size: em(17px);
+}
+h1 {
+    font-size: em(22px);
+}
+h1, h2, h3 {
+    line-height: em(18px);
+}
+.portlet.portletEvents .portletFooter,
+.portlet.portletEvents .portletItem {
+    border-top: 1px solid $htwk-gray2;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+.portlet.portletEvents .portletItem {
+    a {
+        display: block;
+        font-weight: bold;
+        opacity: 0.85;
+    }
+}
+
+/* Plugins */
+
+#content .facultyStaffDirectory {
+    margin-top: 1em;
+}
+#content .personView p.title {
+    margin: 0 0 1em;
+}
+

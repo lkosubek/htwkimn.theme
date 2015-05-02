@@ -1,7 +1,7 @@
 <div class="row quick-start-nav clearfix">
     <div class="cell width-1_3 position-0 quick-start-nav-column">
         <a href="#" class="quick-start-nav icon">
-            <img src="/++theme++htwkimn.theme/images/dummy-content/quick-start-nav-icon1.jpg" alt="Springe zu Studieninteressierte">
+            <img src="/++theme++htwkimn.theme/dummy-content/quick-start-nav-icon1.jpg" alt="Springe zu Studieninteressierte">
             <span class="icon-label">Studieninteressierte</span>
         <a>
         <ul class="quick-start-nav">
@@ -17,7 +17,7 @@
     </div>
     <div class="cell width-1_3 position-1_3 quick-start-nav-column">
         <a href="#" class="quick-start-nav icon">
-            <img src="/++theme++htwkimn.theme/images/dummy-content/quick-start-nav-icon2.jpg" alt="Springe zu Studierende">
+            <img src="/++theme++htwkimn.theme/dummy-content/quick-start-nav-icon2.jpg" alt="Springe zu Studierende">
             <span class="icon-label">Studienrende</span>
         <a>
         <ul class="quick-start-nav">
@@ -30,7 +30,7 @@
     </div>
     <div class="cell width-1_3 position-2_3 quick-start-nav-column">
         <a href="#" class="quick-start-nav icon">
-            <img src="/++theme++htwkimn.theme/images/dummy-content/quick-start-nav-icon4.jpg" alt="Springe zur Fak">        
+            <img src="/++theme++htwkimn.theme/dummy-content/quick-start-nav-icon4.jpg" alt="Springe zur Fak">        
             <span class="icon-label">Fakultät</span>
         <a>
         <ul class="quick-start-nav">
