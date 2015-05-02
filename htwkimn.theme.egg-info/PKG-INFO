@@ -1,7 +1,7 @@
 Metadata-Version: 1.1
 Name: htwkimn.theme
-Version: 0.1
-Summary: A child theme product, that extends the responsive diazo theme https://pypi.python.org/pypi/plonetheme.onegov Build for the faculty IMN of the University of Applied Since Leipzig (HTWK Leipzig), Germany.
+Version: 1.0.1
+Summary: A diazo child theme product, that inherits extends the responsive diazo theme plonetheme.onegov, for the faculty IMN of the University of Applied Since Leipzig (HTWK), Germany.
 Home-page: https://github.com/lkosubek/htwkimn.theme
 Author: Lars Kosubek
 Author-email: post@larskosubek.com
@@ -27,8 +27,8 @@ Description: htwkimn.theme
             eggs +=
                 htwkimn.theme
         
-        - Install the generic import profile.
-        
+        - Install/Activate the generic import profile via extension setup in your site configuration
+        - Have a look for the resources/dummy-content folder for some content examples
         
         Goals
         ------
@@ -94,6 +94,14 @@ Description: htwkimn.theme
         
         Changelog
         =========
+        
+        1.0 (release)
+        -------------------
+        - header variants added
+        - mobilenavigation as dependency added
+        - docs completed, example images added
+        - generic setup, ftw.upgrade activation added
+        - more expressive comments and filenames
         
         0.1dev (unreleased)
         -------------------

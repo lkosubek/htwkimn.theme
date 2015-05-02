@@ -1,0 +1,15 @@
+recursive-include docs *.GPL
+recursive-include docs *.jpg
+recursive-include docs *.png
+recursive-include docs *.txt
+recursive-include htwkimn *.cfg
+recursive-include htwkimn *.html
+recursive-include htwkimn *.ico
+recursive-include htwkimn *.jpg
+recursive-include htwkimn *.png
+recursive-include htwkimn *.pyc
+recursive-include htwkimn *.scss
+recursive-include htwkimn *.src
+recursive-include htwkimn *.swo
+recursive-include htwkimn *.xml
+recursive-include htwkimn *.zcml

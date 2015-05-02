@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0'
+version = '1.0.1'
 
 setup(name='htwkimn.theme',
       version=version,
-      description="A child theme product, that extends the responsive diazo theme https://pypi.python.org/pypi/plonetheme.onegov Build for the faculty IMN of the University of Applied Since Leipzig (HTWK Leipzig), Germany.",
+      description="A diazo child theme product, that inherits extends the responsive diazo theme plonetheme.onegov, for the faculty IMN of the University of Applied Since Leipzig (HTWK), Germany.",
       long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
