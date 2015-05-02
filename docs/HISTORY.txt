@@ -1,6 +1,14 @@
 Changelog
 =========
 
+1.0 (release)
+-------------------
+- header variants added
+- mobilenavigation as dependency added
+- docs completed, example images added
+- generic setup, ftw.upgrade activation added
+- more expressive comments and filenames
+
 0.1dev (unreleased)
 -------------------
 

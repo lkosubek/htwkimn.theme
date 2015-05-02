@@ -19,8 +19,8 @@ Usage
     eggs +=
         htwkimn.theme
 
-- Install the generic import profile.
-
+- Install/Activate the generic import profile via extension setup in your site configuration
+- Have a look for the resources/dummy-content folder for some content examples
 
 Goals
 ------
