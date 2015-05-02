@@ -13,3 +13,6 @@ recursive-include htwkimn *.src
 recursive-include htwkimn *.swo
 recursive-include htwkimn *.xml
 recursive-include htwkimn *.zcml
+
+# added by check_manifest.py
+include *.rst
