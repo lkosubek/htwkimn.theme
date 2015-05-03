@@ -27,15 +27,15 @@ setup(name='htwkimn.theme',
         'setuptools',
         # -*- Extra requirements: -*-
         'Plone>=4.3.3',
-        'plonetheme.onegov==1.5',
+        'plonetheme.onegov>=1.5.3',
         'ftw.footer',
         'ftw.mobilenavigation',
-        'ftw.contentpage==1.9',
+        'ftw.contentpage>=1.11.3',
         'ftw.contenttemplates',
         'ftw.contentmenu',
         'six==1.4.1',
-        'simplelayout.base==4.0.4',
-        'ftw.upgrade==1.12'
+        'simplelayout.base>=4.0.5',
+        'ftw.upgrade>=1.14.4'
       ],
       entry_points="""
       # -*- Entry points: -*-
