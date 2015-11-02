@@ -32,7 +32,7 @@
             </replace>
 
             <!-- Add home button for mobile phones -->
-            <replace css:content="ul.mobileButtons #toggle_slidenavi">
+            <replace css:content="ul.mobileButtons li:last-child">
                 <xsl:copy-of select="."/>
                 <li>
                     <a class="contenttype-subsite" title="Home" href="{$base}">
@@ -51,9 +51,9 @@
 
             <!-- Add claim in header -->
             <after css:theme-children="div.logoRow div.cell:last-child">
-                <span id="portal-title" class="clearfix">
+                <a href="{$base}" id="portal-title" class="clearfix" title="Home">
                     Fakultät Informatik, Mathematik und Naturwissenschaften
-                </span>
+                </a>
             </after>
 
             <!-- Add search button, which replaces search box in to narrow screens.

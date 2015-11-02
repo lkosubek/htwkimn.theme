@@ -43,6 +43,9 @@ body {
     line-height: em(32px, 26px);
     margin: em(36px, 26px) 0 0;
     text-align: right;
+    &:hover {
+        text-decoration: none;
+    }
 }
 .LSBox:before {
     top: em(8px);

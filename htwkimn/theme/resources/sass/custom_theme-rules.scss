@@ -98,9 +98,13 @@ ul.quick-start-nav {
         }
     }
 }
-.section-start-1 h1.documentFirstHeading {
+.section-startseite h1.documentFirstHeading {
     display: none;
 }
 
 
+
+.userrole-anonymous #column-navigation .state-private {
+    display: none;
+}
 
