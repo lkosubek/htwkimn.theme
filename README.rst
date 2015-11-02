@@ -21,7 +21,7 @@ Usage
 
 - Install/Activate the generic import profile via extension setup in your site configuration
 - Have a look for the resources/dummy-content folder for some content examples
-
+- Depending on the version you'll fetch from plonetheme.onegov, you might need to pin ``six = 1.5.2``
 
 Goals and strategy
 ------------------
