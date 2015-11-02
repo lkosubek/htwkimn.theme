@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0.4'
+version = '1.0.55555'
 
 setup(name='htwkimn.theme',
       version=version,

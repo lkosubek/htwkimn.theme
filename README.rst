@@ -77,7 +77,7 @@ Examples
 Live and in action
 ^^^^^^^^^^^^^^^^^^
 
-`HTWK faculty FIMN <http://imn.htwk-leipzig.de>`_
+`HTWK faculty FIMN <http://portal.imn.htwk-leipzig.de/>`_
 
 Desktop
 ^^^^^^^^
