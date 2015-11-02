@@ -36,7 +36,7 @@ unfamiliar with Plone or Diazo.
 
 To reach that goal, the child-theme extends the parent-theme, adds some Diazo rules to modifiy the parents HTML-structure on the fly and registers some custom SCSS files, to overwrite the original CSS styles.
 
-.. image:: https://raw.github.com/lkosubek/htwkimn.theme/master/docs/diazo_parent-theme-model.jpg
+.. image:: https://raw.github.com/lkosubek/htwkimn.theme/master/docs/diazo_parent-theme-model.png
 
 As you can see, the child brings its own Diazo rules.xml to adapt the Diazo html-template of the parent-theme. Furthermore it brings its own CSS styles to adapt the parents layout as well as its styling. 
 
