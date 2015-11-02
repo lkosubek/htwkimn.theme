@@ -1,6 +1,14 @@
 Changelog
 =========
 
+1.0.4-1.0.6
+-------------------
+- navi css changed
+- header link added
+- header home-button rule fixed
+- doc extended
+- dummy content added
+
 1.0.3
 -------------------
 - requirement constraints updated
@@ -15,5 +23,4 @@ Changelog
 
 0.1dev (unreleased)
 -------------------
-
 - Initial release

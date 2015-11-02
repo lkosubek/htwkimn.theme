@@ -75,19 +75,16 @@ Examples
 --------
 
 Live and in action
-^^^^^^^^^^^^^^^^^^
 
 `HTWK faculty FIMN <http://portal.imn.htwk-leipzig.de/>`_
 
 Desktop
-^^^^^^^^
+
 .. image:: https://raw.github.com/lkosubek/htwkimn.theme/master/docs/screenshot-desktop.jpg
 
 Mobile-Landscape
-^^^^^^^^^^^^^^^^^
+
 .. image:: https://raw.github.com/lkosubek/htwkimn.theme/master/docs/screenshot-mobile-landscape.jpg
-
-
 
 
 Copyright
@@ -96,3 +93,5 @@ Copyright
 This package is copyright by `Lars Kosubek <http://larskosubek.com>`_ and was developed in his master thesis `Webseiten  für  mobile  sowie  konventionelle  Endgeräte  mit dem Content-Management-System Plone, Konzeption und Implementierung eines leicht zu wartenden Themes auf Basis von Diazo und Responsive Webdesign für das CMS einer Fakultät der HTWK-Leipzig <http://larskosubek.com/docs/uni/20150511_MA-Thesis_RwdPloneDiazoThemes_LarsKosubek.pdf>`_. 
 
 ``htwkimn.theme`` is licensed under GNU General Public License, version 2.
+
+
