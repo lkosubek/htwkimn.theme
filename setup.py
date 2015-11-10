@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0.8'
+version = '1.0.9'
 
 setup(name='htwkimn.theme',
       version=version,
@@ -33,7 +33,7 @@ setup(name='htwkimn.theme',
         'ftw.contentpage>=1.11.3',
         'ftw.contenttemplates',
         'ftw.contentmenu',
-        'six==1.4.1',
+        'six>=1.4.1',
         'simplelayout.base>=4.0.5',
         'ftw.upgrade>=1.14.4'
       ],

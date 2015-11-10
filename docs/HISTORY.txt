@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.0.9
+-------------------
+- version dependencies updated 
+
 1.0.8
 -------------------
 - workaround to remove "relations_library" navi item of Faculty Staff Directory
