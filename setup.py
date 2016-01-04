@@ -5,7 +5,7 @@ version = '1.0.9'
 
 setup(name='htwkimn.theme',
       version=version,
-      description="A responsive Diazo theme for mobile-friendly websites with Plone 4. As child theme, it extends the responsive plonetheme.onegov and aims for easy development with small or fast changing teams - like at the faculty IMN of the University of Applied Since Leipzig (HTWK), Germany.",
+      description="A responsive Diazo theme for mobile-friendly websites with Plone 4. As child theme, it extends the responsive plonetheme.onegov and aims for easy development with small or fast changing teams - like at the faculty IMN of the University of Applied Sience Leipzig (HTWK), Germany.",
       long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
