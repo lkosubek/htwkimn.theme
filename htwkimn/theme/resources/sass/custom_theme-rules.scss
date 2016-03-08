@@ -102,12 +102,3 @@ ul.quick-start-nav {
     display: none;
 }
 
-
-
-/* Fix FSD and remove senseless navi item in sidebar and mobile navi */
-.userrole-anonymous {
-    a[title=relations_library], li.state-private {
-        display: none !important;
-    }
-}
-
